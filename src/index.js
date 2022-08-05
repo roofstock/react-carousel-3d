@@ -20,15 +20,15 @@ export function Carousel(props) {
   });
   useEffect(() => {
     const locSlides = [];
-    props.slides.forEach((slide) => {
+    props.slides?.forEach((slide) => {
       const slideobject = {
         class: 'slider-single proactivede',
         element: slide,
       };
       locSlides.push(slideobject);
     });
-    if(props.slides.length === 2){
-      props.slides.forEach((slide) => {
+    if(props.slides?.length === 2){
+      props.slides?.forEach((slide) => {
         const slideobject = {
           class: 'slider-single proactivede',
           element: slide,
@@ -83,7 +83,7 @@ export function Carousel(props) {
         proactiveSlide = slide[0];
       }
 
-      slide.forEach((slid, index) => {
+      slide?.forEach((slid, index) => {
         if (slid.class.includes('preactivede')) {
           slid.class = 'slider-single proactivede';
         }
@@ -142,7 +142,7 @@ export function Carousel(props) {
       } else {
         preactiveSlide = slide[slideTotal];
       }
-      slide.forEach((slid, index) => {
+      slide?.forEach((slid, index) => {
         if (slid.class.includes('proactivede')) {
           slid.class = 'slider-single preactivede';
         }
