@@ -19,10 +19,10 @@
     "build": "webpack",
     "lint": "eslint src/index.js"
   },
-  "author": "Suhail C <mr.suhailsulu@gmail.com>",
+  "author": "Roofstock",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/suhailsulu/react-carousel-3d.git"
+    "url": "git+https://github.com/roofstock/react-carousel-3d.git"
   },
   "devDependencies": {
     "@babel/cli": "^7.14.5",
@@ -47,9 +47,9 @@
     "webpack-cli": "^4.7.2"
   },
   "bugs": {
-    "url": "https://github.com/suhailsulu/react-carousel-3d/issues"
+    "url": "https://github.com/roofstock/react-carousel-3d/issues"
   },
-  "homepage": "https://github.com/suhailsulu/react-carousel-3d#readme",
+  "homepage": "https://github.com/roofstock/react-carousel-3d#readme",
   "keywords": [
     "react",
     "carousal",
