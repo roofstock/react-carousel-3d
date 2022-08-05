@@ -1,22 +1,27 @@
 # React 3D Carousel component
+
 3D carousel component in react (with swipe support).
 
-### Demo 
+### Demo
+
 ![Demo](https://i.imgur.com/aa2QTOx.gif)
 
-jsfiddle (https://jsfiddle.net/suhailsulu/8hnqaz2c/) 
+jsfiddle (https://jsfiddle.net/suhailsulu/8hnqaz2c/)
 
 ## Installation
 
-#### npm 
+#### npm
 
 ```
- npm i 3d-react-carousal
+ npm i rs-3d-react-carousal
 ```
+
 #### yarn
+
 ```
- yarn add 3d-react-carousal
+ yarn add rs-3d-react-carousal
 ```
+
 ##### Add fa-css in public.html for arrows
 
 ```
@@ -24,6 +29,7 @@ jsfiddle (https://jsfiddle.net/suhailsulu/8hnqaz2c/)
 ```
 
 ##### Importing the component
+
 ```shell
 import {Carousel} from '3d-react-carousal';
 .
@@ -47,7 +53,9 @@ const callback = function(index){
 <Carousel slides={slides} autoplay={true} interval={1000} onSlideChange={callback}/>
 
 ```
-### props 
+
+### props
+
 <b>slides :-</b> Array of react components  
 <b>autoplay :-</b> Boolean (true or false) - optional  
 <b>interval :-</b> number (time in milliseconds) - optional  
