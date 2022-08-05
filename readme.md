@@ -31,7 +31,7 @@ jsfiddle (https://jsfiddle.net/suhailsulu/8hnqaz2c/)
 ##### Importing the component
 
 ```shell
-import {Carousel} from '3d-react-carousal';
+import {Carousel} from 'rs-3d-react-carousal';
 .
 .
 .
