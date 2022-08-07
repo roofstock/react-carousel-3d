@@ -1,7 +1,9 @@
-import React, { useState, useEffect, useRef, useCallback } from 'react';
-import { useSwipeable } from 'react-swipeable';
-import PropTypes from 'prop-types';
 import './styles/style.scss';
+
+import React, { useCallback, useEffect, useRef, useState } from 'react';
+
+import PropTypes from 'prop-types';
+import { useSwipeable } from 'react-swipeable';
 
 // const isEqual = require("react-fast-compare");
 
@@ -41,10 +43,10 @@ export function Carousel(props) {
     setSlideCurrent(-1);
     if (slideCurrent === -1) {
       setTimeout(() => {
-        nextRef.current.click();
+        nextRef?.current?.click();
         if (props.autoplay) {
           intervalRef.current = setTimeout(() => {
-            nextRef.current.click();
+            nextRef?.current?.click();
         }, props.interval);}
       }, 500);
     }
@@ -110,7 +112,7 @@ export function Carousel(props) {
       if (props.autoplay) {
         clearTimeout(intervalRef.current);
         intervalRef.current = setTimeout(() => {
-          nextRef.current.click();
+          nextRef?.current?.click();
         }, props.interval);
       }
     } else if (slide[0] && slide[0].class !== activeClass) {
